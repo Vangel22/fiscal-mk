@@ -1,12 +1,11 @@
 import win32print
 import win32ui
-import win32con
 import requests
 import time
 
 API_URL = "http://localhost:3000"
 CLIENT_ID = "client123"
-PRINTER_NAME = "POS-80"  # Updated to match Windows name
+PRINTER_NAME = "POS-80"
 MAX_WIDTH = 600  # Adjust based on your printer's width in pixels (for 80mm paper)
 
 def check_printer_connection():
