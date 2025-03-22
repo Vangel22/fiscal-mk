@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if a file argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <filename>"
+    exit 1
+fi
+
+# Check if the file exists and is readable
+if [ ! -f "$1" ]; then
+    echo "Error: File '$1' not found."
+    exit 1
+fi
+
+# Output the content of the file
+echo "This is the accent DLL, I am printing to the printer"
+cat "$1"
